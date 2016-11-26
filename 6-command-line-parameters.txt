@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+   cout << "arcg is: " << argc << endl; 
+   
+   for(int i=1; i<argc;i=i+2)
+   {
+       cout << argv[i] << " is " << argv[i+1] <<endl;
+   }
+   
+   return 0;
+}

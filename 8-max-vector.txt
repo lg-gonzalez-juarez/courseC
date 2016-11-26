@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+   cout << "How many numbers? " << endl;
+   int size;
+   cin >> size;
+   
+   vector< double > array;
+   array.resize(size);
+   
+   for(int i=0; i<size; i++)
+   {
+       cout << "Introduce array[" << i << "]" << endl;
+       double element;
+       cin >> element;
+       array[i] = element;
+   }
+   
+   double max = array[0];
+   for(int i=1; i<size; i++)
+   {
+       if ( array[i] > max )
+           max = array[i];
+   }
+   
+   cout << "Max is: " << max << endl;
+   
+   return 0;
+}

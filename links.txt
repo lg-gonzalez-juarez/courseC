@@ -1,0 +1,5 @@
+C
+http://www.mindviewinc.com/CDs/ThinkingInC/
+
+C++
+http://mindview.net/Books/TICPP/ThinkingInCPP2e.html

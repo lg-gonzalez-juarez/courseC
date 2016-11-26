@@ -1,0 +1,33 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+   vector< double > array;
+
+   int counter = 0;
+   while(true)
+   {
+       cout << "Introduce array[" << counter << "] or '-10000' to quit" << endl;
+       double element;
+       cin.clear();
+       cin >> element;
+       if(element == -10000)
+          break;
+       array.push_back( element );
+       counter++;
+   }
+   
+   double max = array[0];
+   for(int i=1; i<array.size(); i++)
+   {
+       if ( array[i] > max )
+           max = array[i];
+   }
+   
+   cout << "Max is: " << max << endl;
+   
+   return 0;
+}

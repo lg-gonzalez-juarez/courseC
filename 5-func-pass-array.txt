@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int function1(int* a)
+{
+    // dangerous because we do not know how many elements a has
+    return 0;
+}
+
+int function2(int* a, int size)
+{
+    for(int i=0; i<size; i++)
+    {
+        cout << a[i] << endl;
+    }
+    return 0;
+}
+
+int main()
+{
+    int a[3] = { 5 , 7, 10};
+    function1(a);
+    function2(a,3);
+
+   return 0;
+}
